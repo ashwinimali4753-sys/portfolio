@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashwini Mali | AI & Data Science Student Developer</title>
+  <meta name="description" content="Portfolio of Ashwini Aaba Mali — 2nd Year B.Tech AI & Data Science student at R. C. Patel Institute of Technology. Building practical AI, Computer Vision, and Automation solutions." />
+  <meta name="keywords" content="Ashwini Mali, AI, Data Science, Python, Computer Vision, OpenCV, MediaPipe, B.Tech, Portfolio" />
+  <meta name="author" content="Ashwini Aaba Mali" />
+
+  <!-- Google Fonts: JetBrains Mono (Terminal code feel) & Inter (Clean readability) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Glow & Grid Overlay -->
+  <div class="matrix-grid-bg"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo">
+        <span class="prompt-symbol">$</span>
+        <span class="brand-name">ashwini.dev</span>
+        <span class="cursor-blink">_</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a>
+        <a href="#skills" class="nav-link"><span class="nav-num">02.</span> Skills</a>
+        <a href="#projects" class="nav-link"><span class="nav-num">03.</span> Projects</a>
+        <a href="#chatbot" class="nav-link"><span class="nav-num">04.</span> AI Chatbot</a>
+        <a href="#experience" class="nav-link"><span class="nav-num">05.</span> Experience</a>
+        <a href="#education" class="nav-link"><span class="nav-num">06.</span> Education</a>
+        <a href="#contact" class="nav-link"><span class="nav-num">07.</span> Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-recruiter" id="openRecruiterBtn">
+          <i class="fa-solid fa-bolt"></i> 1-Min Recruiter Mode
+        </button>
+        <a href="#contact" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-terminal"></i> Get In Touch
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left: Introduction -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Open to AI / Software Engineering Internships</span>
+          </div>
+
+          <div class="terminal-intro">
+            <span class="code-comment">// Hello, World! I am</span>
+            <h1 class="hero-name">Ashwini Aaba Mali</h1>
+            <h2 class="hero-role">
+              <span class="role-static">Aspiring </span>
+              <span class="role-dynamic" id="typingRole"></span>
+              <span class="cursor-blink-role">|</span>
+            </h2>
+          </div>
+
+          <p class="hero-bio">
+            Second-year <strong>B.Tech student in Artificial Intelligence & Data Science</strong> at 
+            <em>R. C. Patel Institute of Technology</em>. Passionate about bridging theory and impact through 
+            <strong>Computer Vision</strong>, <strong>Voice Recognition</strong>, and practical automation.
+          </p>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Maharashtra, India</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>B.Tech AI & Data Science (2024–2028)</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-folder-open"></i> Explore Projects
+            </a>
+            <a href="#terminal-interactive" class="btn btn-outline">
+              <i class="fa-solid fa-code"></i> Interactive CLI
+            </a>
+            <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.codechef.com/users/ashwinimali4753" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-codechef" title="CodeChef Profile">
+              <i class="fa-solid fa-code"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Terminal Window -->
+        <div class="hero-terminal" id="terminal-interactive">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="window-controls">
+                <span class="ctrl close"></span>
+                <span class="ctrl minimize"></span>
+                <span class="ctrl maximize"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-terminal"></i> ashwini@rcpit-terminal: ~
+              </div>
+              <div class="terminal-mode">bash v5.2</div>
+            </div>
+
+            <div class="terminal-body" id="terminalOutput">
+              <div class="term-line output-line text-muted">
+                Last login: <span id="currentDateDisplay">Tue Oct 13 2026</span> on ttys001
+              </div>
+              <div class="term-line output-line text-accent">
+                Welcome to Ashwini's Developer Console! Type <strong>'help'</strong> or click the quick commands below.
+              </div>
+              <div class="term-line cmd-line">
+                <span class="term-prompt">ashwini@rcpit:~$</span>
+                <span class="term-cmd">whoami</span>
+              </div>
+              <div class="term-line output-line">
+                Ashwini Aaba Mali — 2nd Year AI & DS Undergraduate | Problem Solver | Python & AI Builder
+              </div>
+              <div class="term-line cmd-line">
+                <span class="term-prompt">ashwini@rcpit:~$</span>
+                <span class="term-cmd">cat focus_areas.json</span>
+              </div>
+              <div class="term-line output-line json-output">
+{
+  "major": "Artificial Intelligence & Data Science",
+  "institute": "R. C. Patel Institute of Technology, Shirpur",
+  "primary_languages": ["Python", "C"],
+  "specialties": ["Computer Vision", "Gesture Recognition", "Speech AI", "Safety Tech"]
+}
+              </div>
+            </div>
+
+            <!-- Terminal Interactive Input -->
+            <div class="terminal-input-bar">
+              <span class="term-prompt">ashwini@rcpit:~$</span>
+              <input type="text" id="terminalInput" placeholder="type 'help', 'projects', 'skills', 'contact'..." autocomplete="off" spellcheck="false" />
+              <button id="terminalSubmit" class="term-submit-btn" aria-label="Execute command">
+                <i class="fa-solid fa-arrow-turn-down"></i>
+              </button>
+            </div>
+
+            <!-- Quick Action Chips for non-typing visitors -->
+            <div class="terminal-quick-chips">
+              <span class="chips-label">Quick cmds:</span>
+              <button class="chip-btn" data-cmd="skills">skills</button>
+              <button class="chip-btn" data-cmd="projects">projects</button>
+              <button class="chip-btn" data-cmd="education">education</button>
+              <button class="chip-btn" data-cmd="contact">contact</button>
+              <button class="chip-btn" data-cmd="clear">clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: ABOUT ME -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> 01. Profile Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card terminal-card">
+            <div class="card-tag">bio.md</div>
+            <h3>Passionate about real-world AI applications that solve meaningful problems.</h3>
+            <p>
+              I am a second-year <strong>B.Tech student specializing in Artificial Intelligence and Data Science</strong> 
+              at <em>R. C. Patel Institute of Technology</em>, Maharashtra. My journey in tech is driven by genuine curiosity: 
+              understanding how machine learning models can process human signals—from vocal commands to hand gestures—and turn them into intelligent actions.
+            </p>
+            <p>
+              Rather than just focusing on theory, I emphasize <strong>practical project development</strong>. I have engineered 
+              computer vision prototypes like an <em>AI-based Women's Safety System</em> using OpenCV and MediaPipe, voice assistants with speech synthesis, 
+              and robust algorithm implementations in C and Python.
+            </p>
+            <p>
+              I am eager to contribute my skills to industry internships, collaborate on open-source AI initiatives, and continuously master modern AI frameworks.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                <div>
+                  <h4>AI & Computer Vision</h4>
+                  <p>Hands-on work with MediaPipe, OpenCV, and landmark detection pipelines.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div>
+                  <h4>Clean Code & Version Control</h4>
+                  <p>Disciplined workflow using Git, GitHub, modular Python, and C programming.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>Impact-Driven Engineering</h4>
+                  <p>Passionate about building safety systems, automated tools, and accessible software.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <h4>Rapid Learner</h4>
+                  <p>Constantly expanding from core CS into machine learning and full-stack development.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Interview Snapshot Card -->
+          <div class="about-aside">
+            <div class="interview-quick-card">
+              <div class="quick-card-header">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span>Interview Quick Facts</span>
+              </div>
+              <ul class="quick-facts-list">
+                <li>
+                  <span class="fact-label">Academic Status</span>
+                  <span class="fact-val">B.Tech 2nd Year (AI & DS)</span>
+                </li>
+                <li>
+                  <span class="fact-label">Institute</span>
+                  <span class="fact-val">R. C. Patel Institute of Technology</span>
+                </li>
+                <li>
+                  <span class="fact-label">Primary Languages</span>
+                  <span class="fact-val">Python, C</span>
+                </li>
+                <li>
+                  <span class="fact-label">Current Exploration</span>
+                  <span class="fact-val">Computer Vision, MySQL, Full Stack</span>
+                </li>
+                <li>
+                  <span class="fact-label">Preferred Roles</span>
+                  <span class="fact-val">AI/ML Intern, Python Developer Intern</span>
+                </li>
+                <li>
+                  <span class="fact-label">Availability</span>
+                  <span class="fact-val text-accent">Immediate / Flexible</span>
+                </li>
+              </ul>
+              <div class="quick-card-footer">
+                <a href="#contact" class="btn btn-outline btn-full">
+                  <i class="fa-solid fa-envelope"></i> Schedule Interview
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SKILLS & TECH STACK -->
+    <section id="skills" class="section bg-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> 02. Capabilities</span>
+          <h2 class="section-title">Technical Skills & Arsenal</h2>
+          <p class="section-desc">Technologies, frameworks, and developer tools I actively use in my coursework and projects.</p>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1: AI & Machine Learning -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3>AI & Machine Learning</h3>
+            </div>
+            <p class="cat-desc">Specialized domain coursework and applied vision prototypes.</p>
+            <div class="skill-badges">
+              <div class="skill-pill highlight">
+                <i class="fa-solid fa-eye"></i>
+                <span>Computer Vision</span>
+              </div>
+              <div class="skill-pill highlight">
+                <i class="fa-solid fa-hand"></i>
+                <span>MediaPipe & Gestures</span>
+              </div>
+              <div class="skill-pill highlight">
+                <i class="fa-solid fa-camera"></i>
+                <span>OpenCV</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-microphone"></i>
+                <span>Speech Recognition</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-wave-square"></i>
+                <span>pyttsx3 (TTS)</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>NumPy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming & Backend -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Core Programming</h3>
+            </div>
+            <p class="cat-desc">Foundational programming and algorithmic problem solving.</p>
+            <div class="skill-badges">
+              <div class="skill-pill highlight">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-pill highlight">
+                <i class="fa-solid fa-c"></i>
+                <span>C Programming</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Data Structures</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Algorithm Logic</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Twilio API Integration</span>
+              </div>
+              <div class="skill-pill highlight codechef-pill">
+                <i class="fa-solid fa-code"></i>
+                <span>CodeChef (DSA Practice)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend & Web Basics -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Web & Frontend</h3>
+            </div>
+            <p class="cat-desc">Web user interfaces and interactive presentation layers.</p>
+            <div class="skill-badges">
+              <div class="skill-pill">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Responsive Design</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-database"></i>
+                <span>MySQL (Learning)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Developer Workflow -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>Tools & Workflow</h3>
+            </div>
+            <p class="cat-desc">Modern version control, code editors, and development utilities.</p>
+            <div class="skill-badges">
+              <div class="skill-pill highlight">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-pill highlight">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-desktop"></i>
+                <span>GitHub Desktop</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-file-code"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-cube"></i>
+                <span>Virtual Environments</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal Proficiency Bar -->
+        <div class="terminal-banner">
+          <div class="banner-prompt"><i class="fa-solid fa-lightbulb"></i> <strong>Interview Note:</strong></div>
+          <p>
+            Strong fundamentals in <strong>C and Python</strong> allow me to understand both low-level computational 
+            efficiency and high-level AI framework integration. Currently expanding into full-stack web and database-driven AI backends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-folder-tree"></i> 03. Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Selected projects highlighting hands-on problem solving in AI, Computer Vision, and Core Systems.</p>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1: AI-Based Women's Safety System -->
+          <div class="project-card featured">
+            <div class="project-card-header">
+              <div class="project-status-pill">
+                <span class="pulse-dot"></span> Impact & Computer Vision
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-id">PROJECT_01 // CV & ALERT SYSTEM</div>
+              <h3 class="project-title">AI-Based Women's Safety System</h3>
+              
+              <!-- Unique Interactive Feature: Project View Tabs -->
+              <div class="project-view-tabs">
+                <button class="view-tab active" data-target="p1-overview">Overview</button>
+                <button class="view-tab" data-target="p1-arch">System Architecture</button>
+                <button class="view-tab highlight-tab" data-target="p1-sim">⚡ Live Simulation</button>
+              </div>
+
+              <!-- Tab 1: Overview -->
+              <div class="tab-pane active" id="p1-overview">
+                <p class="project-summary">
+                  An intelligent emergency assistance application that uses <strong>real-time hand gesture recognition</strong> 
+                  to detect distress and SOS signals, automatically dispatching an emergency SMS alert to pre-registered emergency contacts.
+                </p>
+
+                <div class="interview-callout">
+                  <div class="callout-title"><i class="fa-solid fa-chart-simple"></i> Interview Talking Points:</div>
+                  <ul>
+                    <li>Employed <strong>MediaPipe Hand Landmark Tracking</strong> with <strong>OpenCV</strong> for high-frame-rate, non-intrusive gesture classification.</li>
+                    <li>Integrated <strong>Twilio API</strong> to trigger rapid outbound emergency notifications with minimal latency.</li>
+                    <li>Tackles critical real-world personal safety scenarios where manual calling is impossible.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab 2: Architecture Pipeline -->
+              <div class="tab-pane" id="p1-arch">
+                <div class="arch-diagram">
+                  <div class="arch-step"><span class="step-num">01</span> <strong>Webcam Stream:</strong> OpenCV capturing video at 30 FPS</div>
+                  <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                  <div class="arch-step"><span class="step-num">02</span> <strong>MediaPipe Pipeline:</strong> 21 3D Hand Landmarks isolated</div>
+                  <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                  <div class="arch-step"><span class="step-num">03</span> <strong>Classifier Math:</strong> Euclidean Distance & Angle calculations</div>
+                  <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                  <div class="arch-step"><span class="step-num">04</span> <strong>False-Alarm Guard:</strong> 2-Second Continuous Gesture Threshold Buffer</div>
+                  <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                  <div class="arch-step highlight-step"><span class="step-num">05</span> <strong>Twilio Alert:</strong> Instant SMS & GPS Coordinates Sent</div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Interactive Simulation -->
+              <div class="tab-pane" id="p1-sim">
+                <div class="sim-container">
+                  <div class="sim-screen" id="simScreen">
+                    <div class="sim-video-mock">
+                      <div class="mock-landmarks" id="mockLandmarks">
+                        <span class="lm-dot lm-1"></span>
+                        <span class="lm-dot lm-2"></span>
+                        <span class="lm-dot lm-3"></span>
+                        <span class="lm-dot lm-4"></span>
+                        <span class="lm-dot lm-5"></span>
+                      </div>
+                      <div class="sim-badge" id="simBadge">Camera Standby</div>
+                    </div>
+                    <div class="sim-log" id="simLog">Press 'Simulate SOS Gesture' to test the AI trigger pipeline.</div>
+                  </div>
+                  <button class="btn btn-sm btn-primary btn-full" id="runSimBtn">
+                    <i class="fa-solid fa-play"></i> Simulate Hand SOS Detection
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">MediaPipe</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Twilio API</span>
+                <span class="tech-tag">Computer Vision</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+              <span class="repo-meta"><i class="fa-solid fa-tag"></i> Active Prototype</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: F.R.I.D.A.Y. Voice Assistant -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-status-pill">
+                <span class="pulse-dot"></span> Speech AI & Automation
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-id">PROJECT_02 // VOICE RECOGNITION</div>
+              <h3 class="project-title">F.R.I.D.A.Y. – Voice Assistant</h3>
+              <p class="project-summary">
+                A Python-powered conversational desktop assistant inspired by smart AI systems. Capable of processing 
+                spoken natural voice inputs and responding with human-like speech feedback to execute desktop and web operations.
+              </p>
+
+              <!-- Unique Feature: Live Audio Voice Synthesis Preview -->
+              <div class="voice-assistant-demo">
+                <div class="voice-demo-header">
+                  <span class="voice-indicator" id="voiceIndicator"></span>
+                  <span class="voice-label">Interactive Voice Preview</span>
+                </div>
+                <div class="voice-action-bar">
+                  <button class="btn btn-sm btn-outline voice-speak-btn" id="voiceDemoBtn">
+                    <i class="fa-solid fa-volume-high"></i> Hear F.R.I.D.A.Y. Speak
+                  </button>
+                  <span class="voice-subtext" id="voiceSubtext">Speech Synthesis Online</span>
+                </div>
+              </div>
+
+              <div class="interview-callout">
+                <div class="callout-title"><i class="fa-solid fa-chart-simple"></i> Interview Talking Points:</div>
+                <ul>
+                  <li>Leverages <strong>SpeechRecognition</strong> for acoustic parsing with microphone ambient noise adjustment.</li>
+                  <li>Implements <strong>pyttsx3</strong> offline text-to-speech synthesis engine for rapid audio responses.</li>
+                  <li>Built modular command handlers for browser navigation, datetime inquiries, and automated task execution.</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SpeechRecognition</span>
+                <span class="tech-tag">pyttsx3</span>
+                <span class="tech-tag">Web Browser API</span>
+                <span class="tech-tag">Audio Processing</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+              <span class="repo-meta"><i class="fa-solid fa-tag"></i> Python Automation</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Airplane Reservation System -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-status-pill">
+                <span class="pulse-dot"></span> Core Software & Systems
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-id">PROJECT_03 // CORE CS & DATA MANAGEMENT</div>
+              <h3 class="project-title">Airplane Reservation System</h3>
+              <p class="project-summary">
+                A structured flight booking and passenger management system designed to streamline seat allocation, 
+                flight schedule lookups, booking confirmations, and cancellation records with data validation.
+              </p>
+
+              <div class="interview-callout">
+                <div class="callout-title"><i class="fa-solid fa-chart-simple"></i> Interview Talking Points:</div>
+                <ul>
+                  <li>Demonstrates foundational computer science rigour: structured data handling, control flow, and input validation.</li>
+                  <li>Designed menu-driven user workflows to handle seat collision prevention and reservation updates.</li>
+                  <li>Solidified core algorithmic understanding across <strong>C and Python</strong> paradigms.</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">C Programming</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">File Handling</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+              <span class="repo-meta"><i class="fa-solid fa-tag"></i> Academic Project</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE AI CHATBOT & VOICE ASSISTANT -->
+    <section id="chatbot" class="section bg-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-robot"></i> 04. Interactive AI Lab</span>
+          <h2 class="section-title">F.R.I.D.A.Y. Chatbot & Voice Assistant</h2>
+          <p class="section-desc">Experience a live browser demonstration of Ashwini's Voice Assistant project. Ask questions via text or speak directly using your microphone!</p>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="chatbot-lab-card terminal-card">
+          <!-- Chatbot Header -->
+          <div class="cb-header">
+            <div class="cb-header-identity">
+              <div class="cb-avatar">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <span class="cb-avatar-glow"></span>
+              </div>
+              <div>
+                <div class="cb-bot-name">F.R.I.D.A.Y. AI Assistant <span class="cb-online-badge">● Online</span></div>
+                <div class="cb-bot-role">Interactive Representative for Ashwini Mali</div>
+              </div>
+            </div>
+
+            <div class="cb-controls">
+              <button class="cb-mode-btn active" id="inlineVoiceToggle" title="Toggle Vocal Audio Output">
+                <i class="fa-solid fa-volume-high" id="inlineVoiceIcon"></i> <span id="inlineVoiceLabel">Voice: Enabled</span>
+              </button>
+              <button class="cb-mode-btn" id="clearChatBtn" title="Reset Chat History">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+            </div>
+          </div>
+
+          <!-- Chatbot Audio Visualizer Status Banner -->
+          <div class="cb-status-bar">
+            <div class="cb-visualizer" id="cbVisualizer">
+              <span class="cb-bar"></span>
+              <span class="cb-bar"></span>
+              <span class="cb-bar"></span>
+              <span class="cb-bar"></span>
+              <span class="cb-bar"></span>
+              <span class="cb-bar"></span>
+              <span class="cb-bar"></span>
+            </div>
+            <span class="cb-status-text" id="cbStatusText">Assistant ready. Ask questions below or speak via microphone.</span>
+          </div>
+
+          <!-- Chat Conversation Log -->
+          <div class="cb-chat-body" id="cbChatBody">
+            <div class="cb-msg bot">
+              <div class="cb-msg-header"><i class="fa-solid fa-robot"></i> F.R.I.D.A.Y.</div>
+              <div class="cb-msg-bubble">
+                Hello! I am <strong>F.R.I.D.A.Y.</strong>, Ashwini's AI Chatbot and Voice Assistant prototype. 
+                I can brief you on her technical skills, Women's Safety project, coursework at RCPIT, and interview availability. 
+                How can I assist you today?
+              </div>
+            </div>
+          </div>
+
+          <!-- Suggested Quick Prompts -->
+          <div class="cb-quick-prompts">
+            <span class="prompt-title"><i class="fa-solid fa-bolt"></i> Popular Questions:</span>
+            <div class="prompt-buttons">
+              <button class="cb-prompt-btn" data-query="Tell me about Ashwini's background">"About Ashwini"</button>
+              <button class="cb-prompt-btn" data-query="What are Ashwini's core skills?">"Technical Skills"</button>
+              <button class="cb-prompt-btn" data-query="Explain the AI Women's Safety System project">"Women's Safety System"</button>
+              <button class="cb-prompt-btn" data-query="Why should we hire Ashwini for an internship?">"Why Hire Ashwini?"</button>
+              <button class="cb-prompt-btn" data-query="Give me contact info and links">"Contact Info"</button>
+            </div>
+          </div>
+
+          <!-- Input Bar -->
+          <div class="cb-input-bar">
+            <button class="cb-mic-btn" id="cbMicBtn" title="Click to Speak (Microphone)" aria-label="Microphone Voice Input">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+            <input type="text" id="cbInput" placeholder="Ask F.R.I.D.A.Y. a question (e.g. 'What projects has she built?')..." autocomplete="off" />
+            <button class="cb-send-btn" id="cbSendBtn" title="Send Message" aria-label="Send Message">
+              <i class="fa-solid fa-paper-plane"></i> Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: WORK & ACADEMIC EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> 05. Career Timeline</span>
+          <h2 class="section-title">Experience & Project History</h2>
+          <p class="section-desc">My practical journey building software and collaborating on academic engineering initiatives.</p>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content terminal-card">
+              <div class="timeline-date-badge">2025 – Present</div>
+              <h3 class="timeline-role">Student Developer & AI Project Builder</h3>
+              <div class="timeline-company">
+                <i class="fa-solid fa-building-columns"></i> Academic & Personal Project Labs
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Engineered beginner and intermediate-level AI applications, computer vision pipelines, and system utilities using <strong>Python</strong> and <strong>C</strong>.
+                </li>
+                <li>
+                  Maintained structured version control workflows via <strong>Git</strong> and <strong>GitHub</strong>, adhering to commit standards and repository documentation.
+                </li>
+                <li>
+                  Conducted research and prototype experiments in <strong>hand gesture recognition (MediaPipe, OpenCV)</strong> and <strong>speech recognition</strong> to build accessible tools.
+                </li>
+                <li>
+                  Collaborated with peer engineering students on structured problem sets, algorithmic optimization, and design reviews.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Git & GitHub</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> 06. Academic Background</span>
+          <h2 class="section-title">Education & Credentials</h2>
+          <div class="section-bar"></div>
+        </div>
+
+        <div class="education-grid">
+          <!-- Main Degree Card -->
+          <div class="edu-card terminal-card">
+            <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="edu-details">
+              <span class="edu-badge">2024 – 2028 (Currently in 2nd Year)</span>
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="edu-major">Specialization: Artificial Intelligence & Data Science</h4>
+              <p class="edu-institute">
+                <i class="fa-solid fa-location-dot"></i> R. C. Patel Institute of Technology (RCPIT), Shirpur, Maharashtra
+              </p>
+              <div class="edu-key-subjects">
+                <div class="subjects-label">Relevant Coursework & Studies:</div>
+                <div class="subject-tags">
+                  <span class="subject-tag">Data Structures & Algorithms</span>
+                  <span class="subject-tag">Artificial Intelligence Fundamentals</span>
+                  <span class="subject-tag">C Programming</span>
+                  <span class="subject-tag">Python for Data Science</span>
+                  <span class="subject-tag">Database Management Systems</span>
+                  <span class="subject-tag">Discrete Mathematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Goals & Continuous Learning -->
+          <div class="edu-card terminal-card">
+            <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="edu-details">
+              <span class="edu-badge">Continuous Learning</span>
+              <h3 class="edu-degree">Certifications & Ongoing Upskilling</h3>
+              <h4 class="edu-major">Self-Paced Specialization & Industry Readiness</h4>
+              <ul class="cert-list">
+                <li>
+                  <i class="fa-solid fa-check-circle text-accent"></i>
+                  <div>
+                    <strong>Computer Vision & Landmark Tracking:</strong>
+                    <span>Practical implementation of MediaPipe & OpenCV for interactive apps.</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle text-accent"></i>
+                  <div>
+                    <strong>Python for AI & Automation:</strong>
+                    <span>Core scripts, speech synthesis, and modular project development.</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-circle text-accent"></i>
+                  <div>
+                    <strong>Modern Source Code Control:</strong>
+                    <span>Mastery of Git commands, branch management, and GitHub collaboration.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CONTACT & INTERVIEW ACTION -->
+    <section id="contact" class="section bg-darker">
+      <div class="container">
+        <div class="contact-box terminal-card">
+          <div class="contact-header">
+            <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> 07. Initiate Contact</span>
+            <h2 class="section-title">Let's Connect For Opportunities</h2>
+            <p class="contact-subtitle">
+              I am actively seeking <strong>internship roles, collaborative research projects, and mentorship</strong> 
+              in Artificial Intelligence, Computer Vision, and Software Engineering.
+            </p>
+          </div>
+
+          <div class="contact-channels-grid">
+            <!-- Email Box -->
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-info">
+                <h4>Direct Email</h4>
+                <p id="emailText" class="selectable-email">ashwinimali.work@gmail.com</p>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" title="Copy email address">
+                <i class="fa-regular fa-copy"></i> <span id="copyBtnLabel">Copy</span>
+              </button>
+            </div>
+
+            <!-- GitHub Box -->
+            <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="channel-card link-channel">
+              <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-info">
+                <h4>GitHub Profile</h4>
+                <p>github.com/ashwinimali4753-cell</p>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <!-- CodeChef Box -->
+            <a href="https://www.codechef.com/users/ashwinimali4753" target="_blank" rel="noopener noreferrer" class="channel-card link-channel codechef-channel">
+              <div class="channel-icon codechef-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="channel-info">
+                <h4>CodeChef Profile</h4>
+                <p>codechef.com/users/ashwinimali4753</p>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <!-- LinkedIn Box -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-card link-channel">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="channel-info">
+                <h4>LinkedIn Profile</h4>
+                <p>Connect with Ashwini Mali</p>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <!-- Location / Institute -->
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="channel-info">
+                <h4>Base Location</h4>
+                <p>Maharashtra, India (Open to Remote & Onsite)</p>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-globe"></i></div>
+            </div>
+          </div>
+
+          <!-- Quick Message / Interview Note -->
+          <div class="interview-pitch-terminal">
+            <div class="pitch-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="pitch-title">interviewer_note.sh</span>
+            </div>
+            <div class="pitch-body">
+              <p><span class="term-prompt">$</span> cat << 'EOF'</p>
+              <p class="pitch-text">
+                "As a motivated 2nd-year B.Tech AI & Data Science student, I bring strong foundational work ethics, 
+                eagerness to learn cutting-edge stacks, and genuine excitement for solving engineering problems. 
+                I would welcome the opportunity to discuss how I can contribute to your team."
+              </p>
+              <p><span class="term-prompt">$</span> echo "Status: Ready for interview discussion!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= ⚡ 1-Minute Recruiter Mode Modal ================= -->
+  <div class="recruiter-modal-overlay" id="recruiterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="recruiter-modal-content">
+      <div class="recruiter-modal-header">
+        <div class="recruiter-badge">
+          <i class="fa-solid fa-bolt"></i> 1-MINUTE CANDIDATE BRIEFING
+        </div>
+        <button class="close-modal-btn" id="closeRecruiterBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="recruiter-modal-body">
+        <div class="candidate-header">
+          <h2 id="modalTitle">Ashwini Aaba Mali</h2>
+          <div class="candidate-target-badge">Target: AI & Software Engineering Intern</div>
+          <p class="candidate-sub">B.Tech 2nd Year (AI & Data Science) · R. C. Patel Institute of Technology</p>
+        </div>
+
+        <div class="recruiter-tldr-box">
+          <div class="tldr-title"><i class="fa-solid fa-clipboard-check"></i> 30-Second Executive Summary</div>
+          <p>
+            Second-year Artificial Intelligence & Data Science student with hands-on capability in 
+            <strong>Computer Vision (OpenCV, MediaPipe)</strong>, <strong>Voice Recognition</strong>, and 
+            <strong>C & Python Systems</strong>. Focuses on impactful engineering including automated women's safety solutions.
+          </p>
+        </div>
+
+        <div class="recruiter-key-pillars">
+          <div class="pillar-card">
+            <h4><i class="fa-solid fa-eye text-accent"></i> Real-Time AI & CV</h4>
+            <p>21-landmark hand gesture recognition with low-latency emergency Twilio alert dispatch.</p>
+          </div>
+          <div class="pillar-card">
+            <h4><i class="fa-solid fa-microchip text-accent"></i> Core CS Rigor</h4>
+            <p>Solid foundations in C programming, Python data structures, and modular system design.</p>
+          </div>
+          <div class="pillar-card">
+            <h4><i class="fa-solid fa-bolt text-accent"></i> Fast Learner</h4>
+            <p>Disciplined Git/GitHub workflow, strong problem solving, and enthusiastic team player.</p>
+          </div>
+        </div>
+
+        <div class="recruiter-modal-actions">
+          <button class="btn btn-primary" id="modalCopyEmail">
+            <i class="fa-regular fa-copy"></i> Copy Email
+          </button>
+          <a href="https://github.com/ashwinimali4753-cell" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://www.codechef.com/users/ashwinimali4753" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-solid fa-code"></i> CodeChef
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="prompt-symbol">&gt;</span> Designed & Engineered by <strong>Ashwini Aaba Mali</strong>
+      </div>
+      <div class="footer-center">
+        <span>B.Tech AI & Data Science @ R. C. Patel Institute of Technology</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i> Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 🎙️ F.R.I.D.A.Y. Floating Voice Assistant ================= -->
+  <!-- Floating Launcher Button -->
+  <aside aria-label="Voice Assistant Launcher">
+    <button class="voice-assistant-launcher" id="fridayLauncher" title="Talk with F.R.I.D.A.Y. Voice AI" aria-haspopup="dialog">
+      <div class="ai-core-pulse">
+        <span class="core-wave wave-1"></span>
+        <span class="core-wave wave-2"></span>
+        <span class="core-icon"><i class="fa-solid fa-microphone-lines"></i></span>
+      </div>
+      <div class="launcher-label">
+        <span class="launcher-tag">AI VOICE ASSISTANT</span>
+        <span class="launcher-title">Ask F.R.I.D.A.Y.</span>
+      </div>
+    </button>
+  </aside>
+
+  <!-- Interactive Voice Panel -->
+  <div class="friday-panel" id="fridayPanel" role="dialog" aria-modal="false" aria-labelledby="fridayTitle">
+    <div class="friday-panel-header">
+      <div class="friday-header-left">
+        <div class="friday-status-dot"></div>
+        <div>
+          <div class="friday-title" id="fridayTitle">F.R.I.D.A.Y. v2.4</div>
+          <div class="friday-subtitle">Interactive Voice AI Prototype</div>
+        </div>
+      </div>
+      <div class="friday-header-actions">
+        <button class="friday-btn-icon" id="fridayMuteBtn" title="Toggle Vocal Audio" aria-label="Toggle Voice Sound">
+          <i class="fa-solid fa-volume-high" id="muteIcon"></i>
+        </button>
+        <button class="friday-btn-icon" id="fridayCloseBtn" title="Close Panel" aria-label="Close Assistant">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Animated Audio Waveform & Status -->
+    <div class="friday-visualizer-box">
+      <div class="visualizer-bars" id="audioVisualizer">
+        <span class="vbar"></span>
+        <span class="vbar"></span>
+        <span class="vbar"></span>
+        <span class="vbar"></span>
+        <span class="vbar"></span>
+        <span class="vbar"></span>
+        <span class="vbar"></span>
+      </div>
+      <div class="friday-state-text" id="fridayStatusText">Ready. Click the microphone or choose a question below.</div>
+    </div>
+
+    <!-- Interactive Conversation Stream -->
+    <div class="friday-dialog-feed" id="fridayFeed">
+      <div class="fmsg bot-msg">
+        <div class="msg-author"><i class="fa-solid fa-robot"></i> F.R.I.D.A.Y.</div>
+        <div class="msg-content">Hello! I am Ashwini's Voice Assistant prototype. You can speak to me with your microphone, type below, or tap any quick prompt to explore her portfolio.</div>
+      </div>
+    </div>
+
+    <!-- Quick Voice Chips -->
+    <div class="friday-chips-container">
+      <span class="chips-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Quick Voice Queries:</span>
+      <div class="friday-chips">
+        <button class="voice-chip" data-query="Tell me about Ashwini">"Who is Ashwini?"</button>
+        <button class="voice-chip" data-query="What are your technical skills?">"What are her skills?"</button>
+        <button class="voice-chip" data-query="Show me your projects">"Show projects"</button>
+        <button class="voice-chip" data-query="Why should we hire Ashwini?">"Why hire her?"</button>
+        <button class="voice-chip" data-query="How can I contact Ashwini?">"Contact info"</button>
+      </div>
+    </div>
+
+    <!-- Voice Control Bar -->
+    <div class="friday-input-bar">
+      <button class="friday-mic-btn" id="fridayMicBtn" title="Click to Speak" aria-label="Activate Microphone">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <input type="text" id="fridayTextInput" placeholder="Ask F.R.I.D.A.Y. something..." autocomplete="off" />
+      <button class="friday-send-btn" id="fridaySendBtn" title="Send Query" aria-label="Send Query">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
